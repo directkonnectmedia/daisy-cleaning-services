@@ -40,17 +40,11 @@ const Home = (props) => {
             ></Script>
           </div>
         </div>
-        <section aria-label="Hero" className="hero-section">
-          <div className="hero-video-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1581578731522-638df752e276?q=80&w=2070&auto=format&fit=crop"
-              alt=""
-              loading="eager"
-              className="hero-bg-image"
-              width={2070}
-              height={1380}
-            />
-          </div>
+        <section
+          id="hero"
+          aria-label="Hero"
+          className="hero-section hero-container"
+        >
           <div className="hero-content">
             <img
               src="/daisy-logo.png"
