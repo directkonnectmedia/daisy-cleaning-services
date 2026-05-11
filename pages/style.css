@@ -766,32 +766,37 @@
 }
  
 .navigation-logo {
-  gap: var(--spacing-sm);
+  gap: 0;
   display: flex;
   align-items: center;
   flex-shrink: 0;
   text-decoration: none;
   background: transparent;
-  padding: var(--spacing-xs) var(--spacing-sm);
-  min-height: 72px;
+  padding: 0;
+  margin: 0;
+  min-height: 0;
   box-sizing: border-box;
 }
 
 .navigation-logo-img {
   display: block;
   width: auto;
-  height: 66px;
-  max-width: min(300px, 50vw);
+  height: 70px;
+  max-width: min(320px, 55vw);
   object-fit: contain;
   object-position: center;
   transition: transform 0.3s ease;
   background: transparent;
   background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation-logo-img--menu {
-  height: 72px;
-  max-width: min(330px, 75vw);
+  height: 70px;
+  max-width: min(340px, 80vw);
 }
  
 .navigation-links {
@@ -1197,6 +1202,10 @@
   transition: transform 0.4s ease;
   background: transparent;
   background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
 }
  
 .footer-tagline {
@@ -1414,7 +1423,8 @@
 }
 
 .hero-brand-logo {
-  width: min(420px, 92vw);
+  width: 250px;
+  max-width: min(250px, 92vw);
   height: auto;
   display: block;
   margin: 0 auto 20px;
@@ -1422,6 +1432,9 @@
   object-position: center;
   background: transparent;
   background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }
 
 .hero-cta-row {
@@ -2144,6 +2157,8 @@
   position: relative;
   box-shadow: 0 8px 40px color-mix(in srgb, var(--color-on-surface) 15%, transparent);
   border-radius: 24px;
+  background: linear-gradient(135deg, #ffd700 0%, #fff9e5 100%);
+  min-height: 420px;
 }
  
 .area-eyebrow {
@@ -2183,6 +2198,9 @@
   object-fit: cover;
   transition: transform 0.5s ease;
   border-radius: 24px;
+  position: relative;
+  z-index: 1;
+  background: transparent;
 }
  
 .area-map-overlay {
@@ -2611,18 +2629,18 @@
     grid-template-columns: 1fr;
   }
   .navigation-logo-img {
-    height: 57px;
-    max-width: min(240px, 55vw);
+    height: 58px;
+    max-width: min(260px, 58vw);
   }
 
   .navigation-logo-img--menu {
-    height: 64px;
-    max-width: min(280px, 80vw);
+    height: 62px;
+    max-width: min(300px, 85vw);
   }
 
   .navigation-logo {
-    min-height: 64px;
-    padding: var(--spacing-xs);
+    min-height: 0;
+    padding: 0;
   }
   .navigation-brand-tagline {
     display: none;

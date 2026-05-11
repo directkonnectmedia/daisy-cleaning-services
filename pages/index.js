@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 
 import Script from 'dangerous-html/react'
@@ -8,6 +8,8 @@ import Navigation from '../components/navigation'
 import Footer from '../components/footer'
 
 const Home = (props) => {
+  const [areaMapImageFailed, setAreaMapImageFailed] = useState(false)
+
   return (
     <>
       <div className="home-container1">
@@ -55,8 +57,8 @@ const Home = (props) => {
             <img
               src="/daisy-logo.png"
               alt="Daisy's Professional Home Cleaning"
-              width={440}
-              height={165}
+              width={250}
+              height={94}
               className="hero-brand-logo"
             />
             <h1 className="hero-heading-main hero-title">
@@ -825,7 +827,7 @@ const Home = (props) => {
               What Our Clients Say
             </h2>
             <p className="section-content testimonials-sub">
-              Real reviews from real Phoenix homeowners who trust us every
+              Real reviews from real Arizona homeowners who trust us every
               week.
             </p>
           </div>
@@ -931,7 +933,7 @@ const Home = (props) => {
                   <div className="testimonial-author-info">
                     <span className="testimonial-name">Maria G.</span>
                     <span className="testimonial-location">
-                      Phoenix, Arizona
+                      Chandler, Arizona
                     </span>
                   </div>
                 </footer>
@@ -1022,8 +1024,7 @@ const Home = (props) => {
                     &quot;I&apos;ve tried four different cleaning services over
                     the years. Daisy&apos;s is on a completely different level.
                     They&apos;re reliable, thorough, and incredibly
-                    professional. Highly recommend to anyone in the Phoenix Metro
-                    Area.&quot;
+                    professional. Highly recommend to anyone in the Arizona Metro Area.&quot;
                   </span>
                 </blockquote>
                 <footer className="testimonial-footer">
@@ -1294,12 +1295,15 @@ const Home = (props) => {
           <div className="area-inner">
             <div className="area-col area-col--map">
               <div className="area-map-wrap">
-                <img
-                  alt="Camelback Mountain and Phoenix, Arizona — our primary service area"
-                  src="https://images.unsplash.com/photo-1542337311-37d463b2a24c?q=80&w=2070&auto=format&fit=crop"
-                  loading="lazy"
-                  className="area-map-img"
-                />
+                {!areaMapImageFailed ? (
+                  <img
+                    alt="Cinematic Arizona desert sunset — our primary service area"
+                    src="https://images.unsplash.com/photo-1469964062538-06fad433a132?q=80&w=2070&auto=format&fit=crop"
+                    loading="lazy"
+                    className="area-map-img"
+                    onError={() => setAreaMapImageFailed(true)}
+                  />
+                ) : null}
                 <div aria-hidden="true" className="area-map-overlay">
                   <div className="area-map-pin">
                     <svg
@@ -1319,7 +1323,7 @@ const Home = (props) => {
                         <circle r="3" cx="12" cy="10"></circle>
                       </g>
                     </svg>
-                    <span>Phoenix, AZ</span>
+                    <span>Arizona</span>
                   </div>
                 </div>
               </div>
@@ -1327,12 +1331,12 @@ const Home = (props) => {
             <div className="area-col area-col--info">
               <p className="area-eyebrow">We Come to You</p>
               <h2 className="section-title area-heading">
-                Serving All of Phoenix
+                Serving All of Arizona
               </h2>
               <p className="area-desc section-content">
-                From central Phoenix to surrounding communities, Daisy&apos;s
-                Professional Home Cleaning covers the entire Phoenix Metro Area.
-                If you call Phoenix home, we&apos;ve got you covered.
+                From central Arizona to surrounding communities, Daisy&apos;s
+                Professional Home Cleaning covers the entire Arizona Metro Area.
+                If you call Arizona home, we&apos;ve got you covered.
               </p>
               <div className="area-locations">
                 <div className="area-location-item">
@@ -1513,7 +1517,7 @@ const Home = (props) => {
                       <circle r="3" cx="12" cy="10"></circle>
                     </g>
                   </svg>
-                  <span>Downtown Phoenix</span>
+                  <span>Downtown Arizona</span>
                 </div>
               </div>
               <div className="area-cta-row">
