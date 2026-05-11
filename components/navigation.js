@@ -16,13 +16,13 @@ const Navigation = (props) => {
             <a
               href="/"
               aria-label="Daisy's Professional Home Cleaning - Go to homepage"
-              className="navigation-logo"
+              className="nav-logo-link"
             >
               <img
                 src="/daisy-final-v1.png"
                 alt=""
                 height={85}
-                className="navigation-logo-img"
+                className="nav-logo"
               />
             </a>
             <ul role="list" className="navigation-links">
@@ -103,13 +103,13 @@ const Navigation = (props) => {
             <a
               href="/"
               aria-label="Daisy's Professional Home Cleaning - Go to homepage"
-              className="navigation-logo"
+              className="nav-logo-link"
             >
               <img
                 src="/daisy-final-v1.png"
                 alt=""
                 height={85}
-                className="navigation-logo-img navigation-logo-img--menu"
+                className="nav-logo"
               />
             </a>
             <button
@@ -187,7 +187,7 @@ const Navigation = (props) => {
   opacity: 1;
   transform: none;
 }
-.navigation-logo-img, .navigation-link, .navigation-link::after, .navigation-mobile-link {
+.nav-logo, .navigation-link, .navigation-link::after, .navigation-mobile-link {
   transition: none;
 }
 }

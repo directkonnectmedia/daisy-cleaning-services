@@ -22,7 +22,7 @@ const Footer = (props) => {
               <img
                 src="/daisy-final-v1.png"
                 alt="Daisy's Professional Home Cleaning"
-                className="footer-logo-img"
+                className="footer-logo"
               />
               <p className="footer-tagline">
                 Bringing freshness and care to every corner of your home.
@@ -213,7 +213,7 @@ const Footer = (props) => {
             <Script
               html={`<style>
 @media (prefers-reduced-motion: reduce) {
-.footer-logo-img, .footer-contact-chip, .footer-nav-link, .footer-legal-link {
+.footer-logo, .footer-contact-chip, .footer-nav-link, .footer-legal-link {
   transition: none;
 }
 }

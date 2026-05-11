@@ -50,7 +50,7 @@ const Home = (props) => {
               src="/daisy-final-v1.png"
               alt="Daisy's Professional Home Cleaning"
               width={320}
-              className="hero-brand-logo"
+              className="hero-logo"
             />
             <h1 className="hero-heading-main hero-title">
               A spotless home starts here.
