@@ -55,7 +55,10 @@ const Home = (props) => {
               />
             </div>
             <h1 className="hero-heading-main hero-title">
-              A spotless home starts here.
+              <span className="hero-title-script">Daisy&apos;s</span>
+              <span className="hero-title-line">
+                A spotless home starts here.
+              </span>
             </h1>
             <div className="hero-cta-row">
               <a href="#quote-wizard">
