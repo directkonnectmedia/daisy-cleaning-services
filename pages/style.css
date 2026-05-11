@@ -1473,7 +1473,7 @@ section#hero.hero-section {
   outline: none;
   box-shadow: 0 4px 24px color-mix(in srgb, #ffd700 45%, transparent);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-  font-weight: var(--font-weight-medium);
+  font-weight: 700;
   border-radius: var(--border-radius-full);
 }
 
@@ -1481,6 +1481,7 @@ section#hero.hero-section {
   color: #000000;
   background-color: #ffd700;
   border-color: transparent;
+  font-weight: 700;
 }
  
 .hero-badge {
@@ -2262,6 +2263,7 @@ section#hero.hero-section {
   transform: translateY(-2px);
   color: #000000;
   background-color: #f5cc00;
+  font-weight: 700;
   box-shadow: 0 8px 32px color-mix(in srgb, #ffd700 55%, transparent);
 }
  
