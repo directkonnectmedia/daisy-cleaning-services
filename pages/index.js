@@ -52,29 +52,16 @@ const Home = (props) => {
             <div aria-hidden="true" className="hero-overlay"></div>
           </div>
           <div className="hero-content">
-            <div className="hero-eyebrow">
-              <span aria-hidden="true" className="hero-eyebrow-dot"></span>
-              <span className="hero-eyebrow-text">
-                San Diego&apos;s Trusted Cleaning Experts
-              </span>
-            </div>
-            <h1 className="hero-heading-main hero-title">
-              <span>
-                {' '}
-                A Spotless Home
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-              <br></br>
-              <span>Starts Here.</span>
+            <img
+              src="/daisy-logo.png"
+              alt="Daisy's Professional Home Cleaning"
+              width={320}
+              height={120}
+              className="hero-brand-logo"
+            />
+            <h1 className="hero-headline-at-subtitle">
+              A spotless home starts here.
             </h1>
-            <p className="hero-desc hero-subtitle">
-              Professional, reliable, and detail-obsessed — we treat every home
-              as if it were our own. Book in minutes. Enjoy results that last.
-            </p>
             <div className="hero-cta-row">
               <a href="#quote-wizard">
                 <div className="btn-lg btn-primary hero-btn-primary btn">
@@ -838,7 +825,7 @@ const Home = (props) => {
               What Our Clients Say
             </h2>
             <p className="section-content testimonials-sub">
-              Real reviews from real San Diego homeowners who trust us every
+              Real reviews from real Phoenix homeowners who trust us every
               week.
             </p>
           </div>
@@ -944,7 +931,7 @@ const Home = (props) => {
                   <div className="testimonial-author-info">
                     <span className="testimonial-name">Maria G.</span>
                     <span className="testimonial-location">
-                      Mission Hills, San Diego
+                      Phoenix, Arizona
                     </span>
                   </div>
                 </footer>
@@ -1035,7 +1022,8 @@ const Home = (props) => {
                     &quot;I&apos;ve tried four different cleaning services over
                     the years. Daisy&apos;s is on a completely different level.
                     They&apos;re reliable, thorough, and incredibly
-                    professional. Highly recommend to anyone in La Jolla.&quot;
+                    professional. Highly recommend to anyone in the Phoenix Metro
+                    Area.&quot;
                   </span>
                 </blockquote>
                 <footer className="testimonial-footer">
@@ -1045,7 +1033,7 @@ const Home = (props) => {
                   <div className="testimonial-author-info">
                     <span className="testimonial-name">James R.</span>
                     <span className="testimonial-location">
-                      La Jolla, San Diego
+                      Scottsdale, Arizona
                     </span>
                   </div>
                 </footer>
@@ -1146,7 +1134,7 @@ const Home = (props) => {
                   <div className="testimonial-author-info">
                     <span className="testimonial-name">Sofia T.</span>
                     <span className="testimonial-location">
-                      North Park, San Diego
+                      Tempe, Arizona
                     </span>
                   </div>
                 </footer>
@@ -1247,7 +1235,7 @@ const Home = (props) => {
                   <div className="testimonial-author-info">
                     <span className="testimonial-name">Amanda K.</span>
                     <span className="testimonial-location">
-                      Chula Vista, San Diego
+                      Mesa, Arizona
                     </span>
                   </div>
                 </footer>
@@ -1307,8 +1295,8 @@ const Home = (props) => {
             <div className="area-col area-col--map">
               <div className="area-map-wrap">
                 <img
-                  alt="Aerial view of San Diego, our primary service area"
-                  src="https://images.pexels.com/photos/20043159/pexels-photo-20043159.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  alt="Aerial view of Phoenix, Arizona and desert landscape, our primary service area"
+                  src="https://images.pexels.com/photos/2885002/pexels-photo-2885002.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   loading="lazy"
                   className="area-map-img"
                 />
@@ -1331,7 +1319,7 @@ const Home = (props) => {
                         <circle r="3" cx="12" cy="10"></circle>
                       </g>
                     </svg>
-                    <span>San Diego, CA</span>
+                    <span>Phoenix, AZ</span>
                   </div>
                 </div>
               </div>
@@ -1339,12 +1327,12 @@ const Home = (props) => {
             <div className="area-col area-col--info">
               <p className="area-eyebrow">We Come to You</p>
               <h2 className="section-title area-heading">
-                Serving All of San Diego
+                Serving All of Phoenix
               </h2>
               <p className="area-desc section-content">
-                From coastal neighborhoods to inland communities, Daisy&apos;s
-                Professional Home Cleaning covers the entire San Diego metro
-                area. If you call San Diego home, we&apos;ve got you covered.
+                From central Phoenix to surrounding communities, Daisy&apos;s
+                Professional Home Cleaning covers the entire Phoenix Metro Area.
+                If you call Phoenix home, we&apos;ve got you covered.
               </p>
               <div className="area-locations">
                 <div className="area-location-item">
@@ -1365,7 +1353,7 @@ const Home = (props) => {
                       <circle r="3" cx="12" cy="10"></circle>
                     </g>
                   </svg>
-                  <span>La Jolla</span>
+                  <span>Scottsdale</span>
                 </div>
                 <div className="area-location-item">
                   <svg
@@ -1385,7 +1373,7 @@ const Home = (props) => {
                       <circle r="3" cx="12" cy="10"></circle>
                     </g>
                   </svg>
-                  <span>North Park</span>
+                  <span>Tempe</span>
                 </div>
                 <div className="area-location-item">
                   <svg
@@ -1405,7 +1393,7 @@ const Home = (props) => {
                       <circle r="3" cx="12" cy="10"></circle>
                     </g>
                   </svg>
-                  <span>Mission Hills</span>
+                  <span>Mesa</span>
                 </div>
                 <div className="area-location-item">
                   <svg
@@ -1425,7 +1413,7 @@ const Home = (props) => {
                       <circle r="3" cx="12" cy="10"></circle>
                     </g>
                   </svg>
-                  <span>Chula Vista</span>
+                  <span>Chandler</span>
                 </div>
                 <div className="area-location-item">
                   <svg
@@ -1445,7 +1433,7 @@ const Home = (props) => {
                       <circle r="3" cx="12" cy="10"></circle>
                     </g>
                   </svg>
-                  <span>Point Loma</span>
+                  <span>Gilbert</span>
                 </div>
                 <div className="area-location-item">
                   <svg
@@ -1465,7 +1453,7 @@ const Home = (props) => {
                       <circle r="3" cx="12" cy="10"></circle>
                     </g>
                   </svg>
-                  <span>Hillcrest</span>
+                  <span>Glendale</span>
                 </div>
                 <div className="area-location-item">
                   <svg
@@ -1485,7 +1473,7 @@ const Home = (props) => {
                       <circle r="3" cx="12" cy="10"></circle>
                     </g>
                   </svg>
-                  <span>Santee</span>
+                  <span>Peoria</span>
                 </div>
                 <div className="area-location-item">
                   <svg
@@ -1505,7 +1493,7 @@ const Home = (props) => {
                       <circle r="3" cx="12" cy="10"></circle>
                     </g>
                   </svg>
-                  <span>El Cajon</span>
+                  <span>Paradise Valley</span>
                 </div>
                 <div className="area-location-item">
                   <svg
@@ -1525,7 +1513,7 @@ const Home = (props) => {
                       <circle r="3" cx="12" cy="10"></circle>
                     </g>
                   </svg>
-                  <span>Downtown SD</span>
+                  <span>Downtown Phoenix</span>
                 </div>
               </div>
               <div className="area-cta-row">

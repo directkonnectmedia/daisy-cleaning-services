@@ -13,31 +13,18 @@ const Navigation = (props) => {
           className="navigation-bar"
         >
           <div className="navigation-container">
-            <a href="Homepage">
-              <div
-                aria-label="Daisy's Professional Home Cleaning - Go to homepage"
-                className="navigation-logo"
-              >
-                <div aria-hidden="true" className="navigation-logo-icon">
-                  <svg
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 1a4 4 0 0 1 4 4l-.002.055l.03-.018a3.97 3.97 0 0 1 2.79-.455l.237.056a3.97 3.97 0 0 1 2.412 1.865a4.01 4.01 0 0 1-1.455 5.461l-.068.036l.071.039a4.01 4.01 0 0 1 1.555 5.27l-.101.186a3.97 3.97 0 0 1-5.441 1.468l-.03-.02L16 19a4 4 0 0 1-3.8 3.995L12 23a4 4 0 0 1-4-4l.001-.056l-.029.019a3.97 3.97 0 0 1-2.79.456l-.236-.056a3.97 3.97 0 0 1-2.413-1.865a4.01 4.01 0 0 1 1.453-5.46l.07-.038l-.071-.038a4.01 4.01 0 0 1-1.555-5.27l.1-.187a3.97 3.97 0 0 1 5.444-1.468L8 5.055V5a4 4 0 0 1 3.8-3.995zm0 8a3 3 0 1 0 0 6a3 3 0 0 0 0-6"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </div>
-                <div className="navigation-logo-text">
-                  <span className="navigation-brand-name">Daisy&apos;s</span>
-                  <span className="navigation-brand-tagline">
-                    Professional Home Cleaning
-                  </span>
-                </div>
-              </div>
+            <a
+              href="/"
+              aria-label="Daisy's Professional Home Cleaning - Go to homepage"
+              className="navigation-logo"
+            >
+              <img
+                src="/daisy-logo.png"
+                alt=""
+                width={200}
+                height={56}
+                className="navigation-logo-img"
+              />
             </a>
             <ul role="list" className="navigation-links">
               <li>
@@ -114,36 +101,18 @@ const Navigation = (props) => {
           className="navigation-mobile-overlay"
         >
           <div className="navigation-mobile-header">
-            <a href="Homepage">
-              <div
-                aria-label="Daisy's Professional Home Cleaning - Go to homepage"
-                className="navigation-logo"
-              >
-                <div
-                  aria-hidden="true"
-                  className="navigation-logo-icon navigation-logo-icon--dark"
-                >
-                  <svg
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 1a4 4 0 0 1 4 4l-.002.055l.03-.018a3.97 3.97 0 0 1 2.79-.455l.237.056a3.97 3.97 0 0 1 2.412 1.865a4.01 4.01 0 0 1-1.455 5.461l-.068.036l.071.039a4.01 4.01 0 0 1 1.555 5.27l-.101.186a3.97 3.97 0 0 1-5.441 1.468l-.03-.02L16 19a4 4 0 0 1-3.8 3.995L12 23a4 4 0 0 1-4-4l.001-.056l-.029.019a3.97 3.97 0 0 1-2.79.456l-.236-.056a3.97 3.97 0 0 1-2.413-1.865a4.01 4.01 0 0 1 1.453-5.46l.07-.038l-.071-.038a4.01 4.01 0 0 1-1.555-5.27l.1-.187a3.97 3.97 0 0 1 5.444-1.468L8 5.055V5a4 4 0 0 1 3.8-3.995zm0 8a3 3 0 1 0 0 6a3 3 0 0 0 0-6"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </div>
-                <div className="navigation-logo-text">
-                  <span className="navigation-brand-name navigation-brand-name--dark">
-                    Daisy&apos;s
-                  </span>
-                  <span className="navigation-brand-tagline--dark navigation-brand-tagline">
-                    Professional Home Cleaning
-                  </span>
-                </div>
-              </div>
+            <a
+              href="/"
+              aria-label="Daisy's Professional Home Cleaning - Go to homepage"
+              className="navigation-logo"
+            >
+              <img
+                src="/daisy-logo.png"
+                alt=""
+                width={200}
+                height={56}
+                className="navigation-logo-img navigation-logo-img--menu"
+              />
             </a>
             <button
               id="navCloseBtn"
@@ -220,7 +189,7 @@ const Navigation = (props) => {
   opacity: 1;
   transform: none;
 }
-.navigation-logo-icon, .navigation-link, .navigation-link::after, .navigation-mobile-link {
+.navigation-logo-img, .navigation-link, .navigation-link::after, .navigation-mobile-link {
   transition: none;
 }
 }

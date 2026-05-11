@@ -20,142 +20,13 @@ const Footer = (props) => {
           <div className="footer-inner">
             <div className="footer-brand-block">
               <div className="footer-logo-wrap">
-                <span className="footer-daisy-icon">
-                  <svg
-                    fill="none"
-                    width="40"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="40"
-                    stroke="currentColor"
-                    viewBox="0 0 100 100"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <circle r="9" cx="50" cy="50" strokeWidth="3"></circle>
-                    <line
-                      x1="50"
-                      x2="50"
-                      y1="10"
-                      y2="35"
-                      strokeWidth="3"
-                    ></line>
-                    <line
-                      x1="50"
-                      x2="50"
-                      y1="65"
-                      y2="90"
-                      strokeWidth="3"
-                    ></line>
-                    <line
-                      x1="10"
-                      x2="35"
-                      y1="50"
-                      y2="50"
-                      strokeWidth="3"
-                    ></line>
-                    <line
-                      x1="65"
-                      x2="90"
-                      y1="50"
-                      y2="50"
-                      strokeWidth="3"
-                    ></line>
-                    <line
-                      x1="21"
-                      x2="39"
-                      y1="21"
-                      y2="39"
-                      strokeWidth="3"
-                    ></line>
-                    <line
-                      x1="61"
-                      x2="79"
-                      y1="61"
-                      y2="79"
-                      strokeWidth="3"
-                    ></line>
-                    <line
-                      x1="79"
-                      x2="61"
-                      y1="21"
-                      y2="39"
-                      strokeWidth="3"
-                    ></line>
-                    <line
-                      x1="39"
-                      x2="21"
-                      y1="61"
-                      y2="79"
-                      strokeWidth="3"
-                    ></line>
-                    <ellipse
-                      cx="50"
-                      cy="20"
-                      rx="6"
-                      ry="11"
-                      strokeWidth="2.5"
-                    ></ellipse>
-                    <ellipse
-                      cx="50"
-                      cy="80"
-                      rx="6"
-                      ry="11"
-                      strokeWidth="2.5"
-                    ></ellipse>
-                    <ellipse
-                      cx="20"
-                      cy="50"
-                      rx="11"
-                      ry="6"
-                      strokeWidth="2.5"
-                    ></ellipse>
-                    <ellipse
-                      cx="80"
-                      cy="50"
-                      rx="11"
-                      ry="6"
-                      strokeWidth="2.5"
-                    ></ellipse>
-                    <ellipse
-                      cx="26"
-                      cy="26"
-                      rx="6"
-                      ry="11"
-                      transform="rotate(45 26 26)"
-                      strokeWidth="2.5"
-                    ></ellipse>
-                    <ellipse
-                      cx="74"
-                      cy="74"
-                      rx="6"
-                      ry="11"
-                      transform="rotate(45 74 74)"
-                      strokeWidth="2.5"
-                    ></ellipse>
-                    <ellipse
-                      cx="74"
-                      cy="26"
-                      rx="6"
-                      ry="11"
-                      transform="rotate(-45 74 26)"
-                      strokeWidth="2.5"
-                    ></ellipse>
-                    <ellipse
-                      cx="26"
-                      cy="74"
-                      rx="6"
-                      ry="11"
-                      transform="rotate(-45 26 74)"
-                      strokeWidth="2.5"
-                    ></ellipse>
-                  </svg>
-                </span>
-                <div className="footer-brand-text">
-                  <span className="footer-brand-name">Daisy&apos;s</span>
-                  <span className="footer-brand-sub">
-                    Professional Home Cleaning
-                  </span>
-                </div>
+                <img
+                  src="/daisy-logo.png"
+                  alt="Daisy's Professional Home Cleaning"
+                  width={240}
+                  height={72}
+                  className="footer-logo-img"
+                />
               </div>
               <p className="footer-tagline">
                 Bringing freshness and care to every corner of your home.
@@ -346,7 +217,7 @@ const Footer = (props) => {
             <Script
               html={`<style>
 @media (prefers-reduced-motion: reduce) {
-.footer-daisy-icon, .footer-contact-chip, .footer-nav-link, .footer-legal-link {
+.footer-logo-img, .footer-contact-chip, .footer-nav-link, .footer-legal-link {
   transition: none;
 }
 }
