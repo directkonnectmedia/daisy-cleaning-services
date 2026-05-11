@@ -1299,8 +1299,8 @@ const Home = (props) => {
               <div className="area-map-wrap">
                 {!areaMapImageFailed ? (
                   <img
-                    alt="Saguaro desert landscape, our Arizona service area"
-                    src="https://images.unsplash.com/photo-1510134015039-385012354787?q=80&w=2070&auto=format&fit=crop"
+                    alt="Sonoran Desert with saguaro cacti and mountains — our Arizona service area"
+                    src="/arizona-bg.jpg"
                     loading="lazy"
                     className="area-map-img"
                     onError={() => setAreaMapImageFailed(true)}
