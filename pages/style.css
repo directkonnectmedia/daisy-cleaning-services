@@ -748,12 +748,13 @@
   width: 100%;
   z-index: 1000;
   position: sticky;
-  background: color-mix(in srgb, var(--color-surface) 72%, transparent);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 2px 16px color-mix(in srgb, var(--color-on-surface) 6%, transparent);
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none;
   transition: box-shadow 0.3s ease;
-  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
+  border-bottom: 1px solid #f0f0f0;
 }
  
 .navigation-container {
@@ -1413,12 +1414,44 @@ section#hero.hero-section {
   margin-bottom: var(--spacing-3xl);
 }
 
+.hero-logo-cloud {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  padding: 52px;
+  background: transparent;
+  isolation: isolate;
+}
+
+.hero-logo-cloud::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(440px, calc(92vw + 104px));
+  height: min(220px, 42vw);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.6) 40%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  filter: blur(8px);
+  pointer-events: none;
+}
+
 .hero-logo {
+  position: relative;
+  z-index: 1;
   width: 320px;
   max-width: min(320px, 92vw);
   height: auto;
   display: block;
-  margin: 0 auto 20px;
+  margin: 0;
   object-fit: contain;
   object-position: center;
   padding: 0;
