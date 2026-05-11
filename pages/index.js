@@ -42,15 +42,14 @@ const Home = (props) => {
         </div>
         <section aria-label="Hero" className="hero-section">
           <div className="hero-video-wrap">
-            <video
-              src="https://player.vimeo.com/external/421111624.sd.mp4?s=d010729792015f6063e5e40a027ec968f9b9f71c&profile_id=164&oauth2_token_id=57447761"
-              loop="true"
-              muted="true"
-              poster="https://images.pexels.com/photos/6195081/pexels-photo-6195081.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              autoPlay="true"
-              playsInline="true"
-              className="hero-video"
-            ></video>
+            <img
+              src="https://images.unsplash.com/photo-1581578731522-638df752e276?q=80&w=2070&auto=format&fit=crop"
+              alt=""
+              loading="eager"
+              className="hero-bg-image"
+              width={2070}
+              height={1380}
+            />
           </div>
           <div className="hero-content">
             <img
