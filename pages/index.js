@@ -55,11 +55,11 @@ const Home = (props) => {
             <img
               src="/daisy-logo.png"
               alt="Daisy's Professional Home Cleaning"
-              width={320}
-              height={120}
+              width={440}
+              height={165}
               className="hero-brand-logo"
             />
-            <h1 className="hero-headline-at-subtitle">
+            <h1 className="hero-heading-main hero-title">
               A spotless home starts here.
             </h1>
             <div className="hero-cta-row">
@@ -1295,8 +1295,8 @@ const Home = (props) => {
             <div className="area-col area-col--map">
               <div className="area-map-wrap">
                 <img
-                  alt="Aerial view of Phoenix, Arizona and desert landscape, our primary service area"
-                  src="https://images.pexels.com/photos/2885002/pexels-photo-2885002.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  alt="Camelback Mountain and Phoenix, Arizona — our primary service area"
+                  src="https://images.unsplash.com/photo-1542337311-37d463b2a24c?q=80&w=2070&auto=format&fit=crop"
                   loading="lazy"
                   className="area-map-img"
                 />

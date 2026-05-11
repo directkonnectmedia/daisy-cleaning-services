@@ -23,8 +23,8 @@ const Footer = (props) => {
                 <img
                   src="/daisy-logo.png"
                   alt="Daisy's Professional Home Cleaning"
-                  width={240}
-                  height={72}
+                  width={360}
+                  height={108}
                   className="footer-logo-img"
                 />
               </div>
