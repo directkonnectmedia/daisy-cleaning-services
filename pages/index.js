@@ -46,13 +46,14 @@ const Home = (props) => {
           className="hero-section hero-container"
         >
           <div className="hero-content">
-            <img
-              src="/daisy-logo.png"
-              alt="Daisy's Professional Home Cleaning"
-              width={320}
-              height={120}
-              className="hero-brand-logo"
-            />
+            <div className="hero-logo-wrap">
+              <img
+                src="/daisy-logo.png"
+                alt="Daisy's Professional Home Cleaning"
+                width={320}
+                className="hero-brand-logo"
+              />
+            </div>
             <h1 className="hero-heading-main hero-title">
               A spotless home starts here.
             </h1>

@@ -778,6 +778,7 @@
   margin: 0;
   min-height: 0;
   box-sizing: border-box;
+  background: transparent !important;
 }
 
 .navigation-logo-img {
@@ -793,6 +794,7 @@
 }
 
 .navigation-logo-img--menu {
+  width: auto;
   height: 85px;
   max-width: min(380px, 85vw);
 }
@@ -1205,6 +1207,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent !important;
 }
 
 .footer-logo-img {
@@ -1370,10 +1373,19 @@ section#hero.hero-section {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
   background-image: url("https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop") !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+}
+
+.hero-logo-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto 20px;
+  background: transparent !important;
 }
 
 .hero-content {
@@ -1424,7 +1436,7 @@ section#hero.hero-section {
   max-width: min(320px, 92vw);
   height: auto;
   display: block;
-  margin: 0 auto 20px;
+  margin: 0;
   object-fit: contain;
   object-position: center;
   padding: 0;

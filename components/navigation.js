@@ -21,7 +21,6 @@ const Navigation = (props) => {
               <img
                 src="/daisy-logo.png"
                 alt=""
-                width={340}
                 height={85}
                 className="navigation-logo-img"
               />
@@ -109,7 +108,6 @@ const Navigation = (props) => {
               <img
                 src="/daisy-logo.png"
                 alt=""
-                width={340}
                 height={85}
                 className="navigation-logo-img navigation-logo-img--menu"
               />
