@@ -767,7 +767,6 @@
  
 .navigation-logo {
   gap: 0;
-  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -780,29 +779,8 @@
   box-sizing: border-box;
 }
 
-.navigation-logo::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 130%;
-  height: 150%;
-  min-width: 110px;
-  min-height: 72px;
-  z-index: 0;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.6) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  pointer-events: none;
-}
-
 .navigation-logo-img {
   display: block;
-  position: relative;
-  z-index: 1;
   width: auto;
   height: 85px;
   max-width: min(360px, 58vw);
@@ -1110,7 +1088,7 @@
   position: relative;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: var(--color-on-surface);
+  background-color: #fff9e5;
 }
  
 .footer-top-accent {
@@ -1151,7 +1129,7 @@
 .footer-divider {
   width: 100%;
   height: 1px;
-  background: color-mix(in oklab, var(--color-surface) 12%, transparent);
+  background: color-mix(in srgb, #000000 12%, transparent);
   border-radius: var(--border-radius-full);
 }
  
@@ -1186,7 +1164,7 @@
   display: block;
   opacity: 0.5;
   border-radius: var(--border-radius-full);
-  background-color: var(--color-surface);
+  background-color: var(--color-primary);
 }
  
 .footer-petal--1 {
@@ -1199,7 +1177,7 @@
   width: 12px;
   height: 12px;
   opacity: 0.9;
-  background-color: var(--color-surface);
+  background-color: var(--color-primary);
 }
  
 
@@ -1232,8 +1210,8 @@
 }
  
 .footer-tagline {
-  color: var(--color-surface);
-  opacity: 0.55;
+  color: #000000;
+  opacity: 1;
   font-size: var(--font-size-sm);
   max-width: 36rem;
   text-align: center;
@@ -1244,9 +1222,9 @@
  
 .footer-nav-link {
   gap: var(--spacing-xs);
-  color: var(--color-surface);
+  color: #000000;
   display: inline-flex;
-  opacity: 0.7;
+  opacity: 1;
   padding: var(--spacing-xs) var(--spacing-sm);
   font-size: var(--font-size-sm);
   transition: opacity 0.2s ease, color 0.2s ease;
@@ -1261,9 +1239,9 @@
   width: 4px;
   height: 4px;
   display: block;
-  opacity: 0.25;
+  opacity: 0.35;
   border-radius: var(--border-radius-full);
-  background-color: var(--color-surface);
+  background-color: #000000;
 }
  
 .footer-contact-chip {
@@ -1283,8 +1261,8 @@
 }
  
 .footer-legal {
-  color: var(--color-surface);
-  opacity: 0.4;
+  color: #000000;
+  opacity: 1;
   font-size: var(--font-size-xs);
   font-family: var(--font-family-body);
   letter-spacing: var(--letter-spacing-body);
@@ -1309,8 +1287,8 @@
 
  
 .footer-legal-link {
-  color: var(--color-surface);
-  opacity: 0.4;
+  color: #000000;
+  opacity: 1;
   font-size: var(--font-size-xs);
   transition: opacity 0.2s ease, color 0.2s ease;
   font-family: var(--font-family-body);
@@ -1319,13 +1297,13 @@
 }
  
 .footer-dot-sep {
-  color: var(--color-surface);
-  opacity: 0.25;
+  color: #000000;
+  opacity: 0.45;
   font-size: var(--font-size-xs);
 }
  
 .footer-brand-name {
-  color: var(--color-primary);
+  color: #000000;
   font-size: var(--font-size-xl);
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-heading);
@@ -1334,8 +1312,8 @@
 }
  
 .footer-brand-sub {
-  color: var(--color-surface);
-  opacity: 0.75;
+  color: #000000;
+  opacity: 0.85;
   font-size: var(--font-size-xs);
   font-family: var(--font-family-body);
   font-weight: var(--font-weight-medium);
@@ -1359,7 +1337,7 @@
 }
  
 .footer-contact-chip:focus-visible {
-  outline: 2px solid var(--color-surface);
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
  
@@ -1410,14 +1388,7 @@
   object-fit: cover;
   object-position: center;
 }
- 
-.hero-overlay {
-  inset: 0;
-  z-index: 2;
-  position: absolute;
-  background: var(--color-scrim);
-}
- 
+
 .hero-eyebrow {
   gap: var(--spacing-sm);
   display: flex;
@@ -1427,7 +1398,9 @@
  
 .hero-heading-main {
   color: var(--color-surface);
-  text-shadow: 0 2px 20px color-mix(in srgb, var(--color-on-surface) 30%, transparent);
+  text-shadow:
+    0 1px 2px color-mix(in srgb, var(--color-on-surface) 55%, transparent),
+    0 2px 24px color-mix(in srgb, var(--color-on-surface) 35%, transparent);
   margin-bottom: var(--spacing-xl);
 }
 
@@ -1445,42 +1418,12 @@
   margin-bottom: var(--spacing-3xl);
 }
 
-.hero-logo-halo {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  max-width: 100%;
-  margin: 0 auto 20px;
-}
-
-.hero-logo-halo::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 115%;
-  height: 130%;
-  min-height: 160px;
-  z-index: 0;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.6) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  pointer-events: none;
-}
-
 .hero-brand-logo {
-  position: relative;
-  z-index: 1;
   width: 320px;
   max-width: min(320px, 92vw);
   height: auto;
   display: block;
-  margin: 0;
+  margin: 0 auto 20px;
   object-fit: contain;
   object-position: center;
   background: transparent;
@@ -1553,10 +1496,13 @@
   gap: var(--spacing-sm);
   color: var(--color-surface);
   display: flex;
-  opacity: 0.85;
+  opacity: 0.95;
   font-size: var(--font-size-sm);
   align-items: center;
   font-family: var(--font-family-body);
+  text-shadow:
+    0 1px 2px color-mix(in srgb, var(--color-on-surface) 50%, transparent),
+    0 1px 12px color-mix(in srgb, var(--color-on-surface) 30%, transparent);
 }
  
 .trust-section {
@@ -2055,7 +2001,7 @@
  
 .testimonials-section {
   padding: var(--spacing-4xl) 0;
-  background: var(--color-on-surface);
+  background: #fff9e5;
 }
  
 .testimonials-header {
@@ -2073,11 +2019,12 @@
 }
  
 .testimonials-title {
-  color: var(--color-surface);
+  color: #000000;
 }
  
 .testimonials-sub {
-  color: color-mix(in srgb, var(--color-surface) 65%, transparent);
+  color: #000000;
+  opacity: 0.85;
 }
  
 .testimonials-rail {
@@ -2100,10 +2047,10 @@
 .testimonial-card {
   gap: var(--spacing-lg);
   flex: 0 0 380px;
-  border: 1px solid color-mix(in srgb, var(--color-surface) 12%, transparent);
+  border: 1px solid color-mix(in srgb, #000000 10%, transparent);
   display: flex;
   padding: var(--spacing-2xl);
-  background: color-mix(in srgb, var(--color-surface) 8%, transparent);
+  background: color-mix(in srgb, #000000 4%, transparent);
   transition: background 0.3s ease, transform 0.3s ease;
   border-radius: 24px;
   flex-direction: column;
@@ -2112,13 +2059,13 @@
 }
  
 .testimonials-scroll-btn {
-  color: var(--color-surface);
+  color: #000000;
   width: 44px;
-  border: 1px solid color-mix(in srgb, var(--color-surface) 25%, transparent);
+  border: 1px solid color-mix(in srgb, #000000 18%, transparent);
   cursor: pointer;
   height: 44px;
   display: flex;
-  background: color-mix(in srgb, var(--color-surface) 10%, transparent);
+  background: color-mix(in srgb, #000000 6%, transparent);
   transition: background 0.2s ease, border-color 0.2s ease;
   align-items: center;
   border-radius: var(--border-radius-full);
@@ -2133,7 +2080,8 @@
  
 .testimonial-quote {
   flex: 1;
-  color: color-mix(in srgb, var(--color-surface) 85%, transparent);
+  color: #000000;
+  opacity: 0.92;
   font-size: var(--font-size-base);
   font-style: italic;
   font-family: var(--font-family-body);
@@ -2168,14 +2116,15 @@
 }
  
 .testimonial-name {
-  color: var(--color-surface);
+  color: #000000;
   font-size: var(--font-size-sm);
   font-family: var(--font-family-body);
   font-weight: var(--font-weight-medium);
 }
  
 .testimonial-location {
-  color: color-mix(in srgb, var(--color-surface) 55%, transparent);
+  color: #000000;
+  opacity: 0.72;
   font-size: var(--font-size-xs);
   font-family: var(--font-family-body);
 }
@@ -2421,7 +2370,7 @@
  
 .testimonial-card:hover {
   transform: translateY(-4px);
-  background: color-mix(in srgb, var(--color-surface) 14%, transparent);
+  background: color-mix(in srgb, #000000 8%, transparent);
 }
  
 .testimonials-scroll-btn:hover {
@@ -2693,10 +2642,6 @@
     max-width: min(320px, 88vw);
   }
 
-  .navigation-logo::before {
-    min-height: 60px;
-    min-width: 96px;
-  }
   .navigation-brand-tagline {
     display: none;
   }

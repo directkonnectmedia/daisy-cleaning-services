@@ -43,26 +43,23 @@ const Home = (props) => {
         <section aria-label="Hero" className="hero-section">
           <div className="hero-video-wrap">
             <video
-              src="https://player.vimeo.com/external/451000840.sd.mp4?s=4b6e511364b4c462371901a59757657b28292851&amp;profile_id=164&amp;oauth2_token_id=57447761"
+              src="https://player.vimeo.com/external/421111624.sd.mp4?s=d010729792015f6063e5e40a027ec968f9b9f71c&profile_id=164&oauth2_token_id=57447761"
               loop="true"
               muted="true"
-              poster="https://images.pexels.com/photos/6195951/pexels-photo-6195951.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+              poster="https://images.pexels.com/photos/6195081/pexels-photo-6195081.jpeg?auto=compress&cs=tinysrgb&w=1200"
               autoPlay="true"
               playsInline="true"
               className="hero-video"
             ></video>
-            <div aria-hidden="true" className="hero-overlay"></div>
           </div>
           <div className="hero-content">
-            <div className="hero-logo-halo">
-              <img
-                src="/daisy-logo.png"
-                alt="Daisy's Professional Home Cleaning"
-                width={320}
-                height={120}
-                className="hero-brand-logo"
-              />
-            </div>
+            <img
+              src="/daisy-logo.png"
+              alt="Daisy's Professional Home Cleaning"
+              width={320}
+              height={120}
+              className="hero-brand-logo"
+            />
             <h1 className="hero-heading-main hero-title">
               A spotless home starts here.
             </h1>
