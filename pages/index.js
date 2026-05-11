@@ -54,13 +54,15 @@ const Home = (props) => {
             <div aria-hidden="true" className="hero-overlay"></div>
           </div>
           <div className="hero-content">
-            <img
-              src="/daisy-logo.png"
-              alt="Daisy's Professional Home Cleaning"
-              width={250}
-              height={94}
-              className="hero-brand-logo"
-            />
+            <div className="hero-logo-halo">
+              <img
+                src="/daisy-logo.png"
+                alt="Daisy's Professional Home Cleaning"
+                width={320}
+                height={120}
+                className="hero-brand-logo"
+              />
+            </div>
             <h1 className="hero-heading-main hero-title">
               A spotless home starts here.
             </h1>
@@ -294,8 +296,8 @@ const Home = (props) => {
               <article className="service-card">
                 <div className="service-card-img-wrap">
                   <img
-                    alt="Professional cleaners doing deep cleaning in a kitchen"
-                    src="https://images.pexels.com/photos/6196682/pexels-photo-6196682.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Professional cleaners doing a colorful deep clean in a bright kitchen"
+                    src="https://images.pexels.com/photos/4107179/pexels-photo-4107179.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                     loading="lazy"
                     className="service-card-img"
                   />
@@ -1297,8 +1299,8 @@ const Home = (props) => {
               <div className="area-map-wrap">
                 {!areaMapImageFailed ? (
                   <img
-                    alt="Cinematic Arizona desert sunset — our primary service area"
-                    src="https://images.unsplash.com/photo-1469964062538-06fad433a132?q=80&w=2070&auto=format&fit=crop"
+                    alt="Saguaro desert landscape, our Arizona service area"
+                    src="https://images.unsplash.com/photo-1510134015039-385012354787?q=80&w=2070&auto=format&fit=crop"
                     loading="lazy"
                     className="area-map-img"
                     onError={() => setAreaMapImageFailed(true)}
@@ -1331,7 +1333,7 @@ const Home = (props) => {
             <div className="area-col area-col--info">
               <p className="area-eyebrow">We Come to You</p>
               <h2 className="section-title area-heading">
-                Serving All of Arizona
+                Serving all of Arizona
               </h2>
               <p className="area-desc section-content">
                 From central Arizona to surrounding communities, Daisy&apos;s
