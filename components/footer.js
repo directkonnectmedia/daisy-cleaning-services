@@ -19,13 +19,11 @@ const Footer = (props) => {
           </div>
           <div className="footer-inner">
             <div className="footer-brand-block">
-              <div className="footer-logo-wrap">
-                <img
-                  src="/daisy-logo.png"
-                  alt="Daisy's Professional Home Cleaning"
-                  className="footer-logo-img"
-                />
-              </div>
+              <img
+                src="/daisy-final-v1.png"
+                alt="Daisy's Professional Home Cleaning"
+                className="footer-logo-img"
+              />
               <p className="footer-tagline">
                 Bringing freshness and care to every corner of your home.
               </p>

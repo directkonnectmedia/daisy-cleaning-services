@@ -791,12 +791,14 @@
   transition: transform 0.3s ease;
   padding: 0;
   margin: 0;
+  background: transparent !important;
 }
 
 .navigation-logo-img--menu {
   width: auto;
   height: 85px;
   max-width: min(380px, 85vw);
+  background: transparent !important;
 }
  
 .navigation-links {
@@ -1140,6 +1142,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: transparent !important;
 }
  
 .footer-divider {
@@ -1201,14 +1204,6 @@
 .footer-petal--5 {
   opacity: 0.3;
 }
- 
-.footer-logo-wrap {
-  gap: var(--spacing-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent !important;
-}
 
 .footer-logo-img {
   display: block;
@@ -1220,6 +1215,7 @@
   transition: transform 0.4s ease;
   padding: 0;
   margin: 0;
+  background: transparent !important;
 }
  
 .footer-tagline {
@@ -1380,14 +1376,6 @@ section#hero.hero-section {
   background-repeat: no-repeat !important;
 }
 
-.hero-logo-wrap {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin: 0 auto 20px;
-  background: transparent !important;
-}
-
 .hero-content {
   width: 100%;
   display: flex;
@@ -1399,6 +1387,7 @@ section#hero.hero-section {
   text-align: center;
   align-items: center;
   flex-direction: column;
+  background: transparent !important;
 }
  
 .hero-eyebrow {
@@ -1436,10 +1425,11 @@ section#hero.hero-section {
   max-width: min(320px, 92vw);
   height: auto;
   display: block;
-  margin: 0;
+  margin: 0 auto 20px;
   object-fit: contain;
   object-position: center;
   padding: 0;
+  background: transparent !important;
 }
 
 .hero-cta-row {
@@ -2542,7 +2532,7 @@ section#hero.hero-section {
     align-items: center;
     flex-direction: column;
   }
-  .footer-logo-wrap {
+  .footer-brand-block {
     text-align: center;
     flex-direction: column;
   }

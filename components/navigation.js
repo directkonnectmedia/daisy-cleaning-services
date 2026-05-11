@@ -19,7 +19,7 @@ const Navigation = (props) => {
               className="navigation-logo"
             >
               <img
-                src="/daisy-logo.png"
+                src="/daisy-final-v1.png"
                 alt=""
                 height={85}
                 className="navigation-logo-img"
@@ -106,7 +106,7 @@ const Navigation = (props) => {
               className="navigation-logo"
             >
               <img
-                src="/daisy-logo.png"
+                src="/daisy-final-v1.png"
                 alt=""
                 height={85}
                 className="navigation-logo-img navigation-logo-img--menu"
