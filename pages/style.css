@@ -774,8 +774,6 @@
   justify-content: center;
   flex-shrink: 0;
   text-decoration: none;
-  background: transparent !important;
-  border: none !important;
   padding: 0;
   margin: 0;
   min-height: 0;
@@ -790,24 +788,13 @@
   object-fit: contain;
   object-position: center;
   transition: transform 0.3s ease;
-  background: transparent !important;
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none;
   padding: 0;
   margin: 0;
-  mix-blend-mode: screen !important;
-  filter: contrast(110%) brightness(110%);
 }
 
 .navigation-logo-img--menu {
   height: 85px;
   max-width: min(380px, 85vw);
-  background: transparent !important;
-  background-color: transparent !important;
-  border: none !important;
-  mix-blend-mode: screen !important;
-  filter: contrast(110%) brightness(110%);
 }
  
 .navigation-links {
@@ -1228,14 +1215,8 @@
   object-fit: contain;
   object-position: center;
   transition: transform 0.4s ease;
-  background: transparent !important;
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none;
   padding: 0;
   margin: 0;
-  mix-blend-mode: screen !important;
-  filter: contrast(110%) brightness(110%);
 }
  
 .footer-tagline {
@@ -1446,13 +1427,7 @@ section#hero.hero-section {
   margin: 0 auto 20px;
   object-fit: contain;
   object-position: center;
-  background: transparent !important;
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none;
   padding: 0;
-  mix-blend-mode: screen !important;
-  filter: contrast(110%) brightness(110%);
 }
 
 .hero-cta-row {
@@ -1492,26 +1467,20 @@ section#hero.hero-section {
 .hero-btn-primary {
   padding: var(--spacing-lg) var(--spacing-3xl);
   font-size: var(--font-size-lg);
-  box-shadow: 0 4px 24px color-mix(in srgb, var(--color-primary) 40%, transparent);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #000000;
+  background-color: #ffd700;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 24px color-mix(in srgb, #ffd700 45%, transparent);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
   font-weight: var(--font-weight-medium);
   border-radius: var(--border-radius-full);
 }
- 
-.hero-btn-ghost {
-  color: var(--color-surface);
-  border: 1.5px solid color-mix(in srgb, var(--color-surface) 50%, transparent);
-  display: inline-flex;
-  padding: var(--spacing-lg) var(--spacing-3xl);
-  font-size: var(--font-size-lg);
-  background: color-mix(in srgb, var(--color-surface) 15%, transparent);
-  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
-  align-items: center;
-  font-weight: var(--font-weight-medium);
-  border-radius: var(--border-radius-full);
-  backdrop-filter: blur(8px);
-  justify-content: center;
-  text-decoration: none;
+
+.hero-btn-primary.btn-primary {
+  color: #000000;
+  background-color: #ffd700;
+  border-color: transparent;
 }
  
 .hero-badge {
@@ -2288,15 +2257,12 @@ section#hero.hero-section {
   font-style: italic;
 }
  
-.hero-btn-primary:hover {
+.hero-btn-primary:hover,
+.hero-btn-primary.btn-primary:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px color-mix(in srgb, var(--color-primary) 50%, transparent);
-}
- 
-.hero-btn-ghost:hover {
-  transform: translateY(-2px);
-  background: color-mix(in srgb, var(--color-surface) 25%, transparent);
-  border-color: var(--color-surface);
+  color: #000000;
+  background-color: #f5cc00;
+  box-shadow: 0 8px 32px color-mix(in srgb, #ffd700 55%, transparent);
 }
  
 .hero-badge  svg {
@@ -2584,10 +2550,6 @@ section#hero.hero-section {
     flex-direction: column;
   }
   .hero-btn-primary {
-    width: 100%;
-    max-width: 320px;
-  }
-  .hero-btn-ghost {
     width: 100%;
     max-width: 320px;
   }

@@ -63,7 +63,7 @@ const Home = (props) => {
                 </div>
               </a>
               <a href="#services">
-                <div className="btn-lg hero-btn-ghost btn">
+                <div className="btn-lg btn-primary hero-btn-primary btn">
                   <span>See Our Services</span>
                 </div>
               </a>
